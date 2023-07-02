@@ -1,0 +1,55 @@
+@use '../utils/vars' as *;
+@use './mixins' as *;
+@use './buttons' as *;
+
+
+    
+.banner {
+    position: relative;
+    background-image: url('/images/background/img_overlay.svg'), url('/images/background/img_main.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(47, 48, 58, 1);
+    width: 100%;
+    height: 400px;
+
+    @media screen and (min-width: 1200px) {
+        width: 1600px;
+        height: 600px;
+    }
+
+    &__motto {
+
+        position: absolute;
+        width: 100%;
+        height: 84px;
+        top: 118px;
+        @media screen and (min-width: 1200px) {
+            top: 200px;
+            height: 120px;
+        }
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+        &__text {
+            font-size: 26px;
+            @media screen and (min-width: 1200px) {
+                font-size: 44px;
+                line-height: 60px;
+            }
+            
+            color: $white;
+            text-align: center;
+        }
+    }
+
+    &__button {
+        @extend %btn;
+        @include setCenter(232px, 50%);
+        
+        @media screen and (min-width: 1200px) {
+            margin-top: 40px;
+            top: 350px;
+        }
+    }
+}

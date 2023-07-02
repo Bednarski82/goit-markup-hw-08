@@ -1,0 +1,54 @@
+@use './components/header' as *;
+@use './components/mobile-menu' as *;
+@use './components/banner' as *;
+@use './components/sections' as *;
+@use './components/logo' as *;
+@use './components/modal' as *;
+@use './components/form_group' as *;
+@use './components/footer' as *;
+
+@use './utils/vars' as *;
+@use './components/mixins' as *;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .25s;
+}
+
+body {
+    min-width:320px;
+    max-width: 100vw;
+
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+    }
+
+    @include marginAuto();
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    min-width: 320px;
+    @include marginAuto();
+    }
+
+@media screen and (min-width: 1200px) {
+
+    .container {
+        width: 1200px;
+        @include marginAuto();
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.is_hidden {
+    visibility: hidden;
+    opacity: 0;
+}

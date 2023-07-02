@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hm8-main-page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="modal is_hidden" data-modal >
+      <form class="modal__popup">
+        <span class="close" data-modal-close>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="close-black-18dp (2) 1">
+              <path id="Vector" d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="black"/>
+            </g>
+          </svg>
+        </span>
+        <div class="form_group" role="group">
+          <p class="form_group__header">Zostaw swoje dane w formularzu poniżej</p>
+          <div class="form_group__content">
+            <label class="form_group__content__label">
+              Imie
+            </label>
+            <div class="form_group__content__input">
+              <input type="text" name="first_name"> 
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="person-black-18dp 1" clip-path="url(#clip0_4082_1334)">
+                  <path id="Vector" d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z" fill="black"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_4082_1334">
+                  <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="form_group__content">
+            <label class="form_group__content__label">
+              Telefon
+            </label>
+            <div class="form_group__content__input">
+              <input type="text" name="last_name"> 
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="phone-black-18dp 1" clip-path="url(#clip0_4082_1340)">
+                    <path id="Vector" d="M13.996 11.1226L12.1579 10.9128C11.7164 10.8621 11.2822 11.0141 10.971 11.3253L9.63945 12.6568C7.59144 11.6147 5.91251 9.94302 4.87041 7.88776L6.20922 6.54895C6.5204 6.23776 6.67237 5.80355 6.62171 5.36211L6.41185 3.53843C6.325 2.80751 5.70988 2.25751 4.97173 2.25751H3.71976C2.902 2.25751 2.22175 2.93777 2.2724 3.75553C2.65595 9.93578 7.59868 14.8713 13.7717 15.2548C14.5894 15.3055 15.2697 14.6252 15.2697 13.8075V12.5555C15.2769 11.8246 14.7269 11.2095 13.996 11.1226Z" fill="#212121"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_4082_1340">
+                  <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                  </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="form_group__content">
+            <label class="form_group__content__label">
+              Email
+            </label>
+            <div class="form_group__content__input">
+              <input type="email" name="email"> 
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="email-black-18dp 1" clip-path="url(#clip0_4082_1346)">
+                  <path id="Vector" d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z" fill="#212121"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_4082_1346">
+                    <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="form_group__content">
+            <label class="form_group__content__label">
+              Komentarz
+            </label>
+            <div class="form_group__content__textarea">
+              <textarea placeholder="Wprowadź tekst" ></textarea>
+            </div>
+          </div>
+          <div class="rules_accepted__container">
+            <input class="rules_accepted__container__checkbox" type="checkbox">
+            <p class="rules_accepted__container__text">Oświadczam iż akceptuję&nbsp;
+              <a class="rules_accepted__container__text__link" href="Regulamin">Regulamin</a>
+                &nbsp;i&nbsp;
+              <a class="rules_accepted__container__text__link" href="Politykę Prywatności">Politykę Prywatności</a>
+            </p>
+            <button class="button" type="button">Wyślij</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <header class="container">
+      <div class="desktop__header">
+        <div class="left_side">
+          <div class="logo">
+            <span class="logo__item--blue">Web</span>
+            <span class="logo__item">studio</span>
+          </div>
+          <nav>
+            <ul class="navigation">
+              <li class="navigation__item is_active" >
+                <a class="navigation__item__link" href="index.html">Agencja</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__item__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__item__link" href="">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right_side">
+            <a class="right_side__item" href="mailto:info@devstudio.com">
+              <svg class="right_side__item__icon--envelope1" width="16px" height="12px">
+                <use href="./images/icons-svg/icons.svg#icon-envelope1"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
+            <a class="right_side__item" href="+48 111 111 111">
+              <svg class="right_side__item__icon--smartphone" width="10px" height="16px">
+                <use href="./images/icons-svg/icons.svg#icon-smartphone"></use>
+              </svg>
+            <span>+48 111 111 111</span>  
+            </a>
+        </div>
+      </div>
+      <div class="mobile__header">
+        <div class="mobile__header__logo logo">
+          <span class="logo__item--blue">Web</span>
+          <span class="logo__item">studio</span>
+        </div>
+        <svg class="mobile__header__icon js-open-menu" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="menu_40px">
+            <path id="icon/navigation/menu_24px" fill-rule="evenodd" clip-rule="evenodd" d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z" fill="black"/>
+          </g>
+        </svg>
+      </div>
+      <div class="menu__container js-menu-container">
+        <svg class="menu__container__close js-close-menu"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+
+        <ul class="menu__container__content">
+          <li class="menu__container__content__item">
+            <a href="" class="menu__container__content__item__link is_active">Agencja</a>
+          </li>
+          <li class="menu__container__content__item">
+            <a href="" class="menu__container__content__item__link">Portfolio</a>
+          </li>
+          <li class="menu__container__content__item">
+            <a href="" class="menu__container__content__item__link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="info__container">
+              <a class="info__container__phone" href="">+48 111 111 111</a>
+              <a class="info__container__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div class="info__container_socials">
+
+            </div>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div class="banner">
+        <div class="banner__motto">
+          <h1 class="banner__motto__text">EFEKTYWNE ROZWIĄZANIA<br> DLA WASZEGO BIZNESU</h1>
+        </div>
+        <button class="banner__button" type="button" data-modal-open >Zamów usługe</button>
+      </div>
+      <section>
+        <div class="container">
+          <div class="slots__icon">
+            <div class="slots__icon__item">
+              <div class="slots__icon__item__media">
+                <svg width="65.32px" height="70px">
+                  <use href="./images/icons-svg/icons.svg#icon-antenna-1"></use>
+                </svg>
+              </div>
+              <h3 class="slots__icon__item__title">LOREM IPSUM</h3>
+              <p class="slots__icon__item__description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed <br>non sodales dui. Interdum et malesuada</p>
+            </div>
+            <div class="slots__icon__item">
+              <div class="slots__icon__item__media">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons-svg/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="slots__icon__item__title">LOREM IPSUM</h3>
+              <p class="slots__icon__item__description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed <br>non sodales dui. Interdum et malesuada</p>
+            </div>
+            <div class="slots__icon__item">
+              <div class="slots__icon__item__media">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons-svg/icons.svg#icon-diagram-11"></use>
+                </svg>
+              </div>
+              <h3 class="slots__icon__item__title">LOREM IPSUM</h3>
+              <p class="slots__icon__item__description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed <br>non sodales dui. Interdum et malesuada</p>
+            </div>
+            <div class="slots__icon__item">
+              <div class="slots__icon__item__media">
+                <svg width="70px" height="70px">
+                  <use href="./images/icons-svg/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              <h3 class="slots__icon__item__title">LOREM IPSUM</h3>
+              <p class="slots__icon__item__description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed <br>non sodales dui. Interdum et malesuada</p>
+            </div>
+          </div>
+          <h2>Czym się zajmujemy</h2>
+          <ul class="slots__img">
+            <li class="slots__img__item">
+              <img src="./images/what_we_do/img(1)(1).jpg" alt="computer" width="370px" height="294px"> 
+              <div class="slots__img__item__header">
+                <p>Aplikacje komputerowe</p>
+              </div>      
+            </li>
+            <li class="slots__img__item">
+              <img src="./images/what_we_do/img(2)(1).jpg" alt="smartphone" width="370px" height="294px"> 
+              <div class="slots__img__item__header">
+                <p>Aplikacje mobilne</p>
+              </div>
+            </li>
+            <li class="slots__img__item">
+              <img src="./images/what_we_do/img(3)(1).jpg" alt="tablet" width="370px" height="294px">
+              <div class="slots__img__item__header">
+                <p>Rozwiązania graficzne</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section__our-team ">
+        <h2>Nasz zespół</h2>
+        <div class="slots__container container">
+          <div class="slots__container__item">
+            <img src="./images/our_team/img(4)(1).jpg" alt="product designer" width="270px" height="260px">
+            <h3 class="slots__container__item__title">John Doe</h3>
+            <p class="slots__container__item__description">Product Designer</p>
+            <div class="slots__container__item__socials">
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-instagram-21"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-twitter-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-facebook-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-linkedin-11"> 
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="slots__container__item">
+            <img src="./images/our_team/img(8)(1).jpg" alt="product designer" width="270px" height="260px">
+            <h3 class="slots__container__item__title">John Doe</h3>
+            <p class="slots__container__item__description">Frontend Developer</p>
+            <div class="slots__container__item__socials">
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-instagram-21"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-twitter-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-facebook-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-linkedin-11"> 
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="slots__container__item">
+            <img src="./images/our_team/img(9)(1).jpg" alt="product designer" width="270px" height="260px">
+            <h3 class="slots__container__item__title">John Doe</h3>
+            <p class="slots__container__item__description">Marketing</p>
+            <div class="slots__container__item__socials">
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-instagram-21"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-twitter-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-facebook-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-linkedin-11"> 
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="slots__container__item">
+            <img src="./images/our_team/img(10)(1).jpg" alt="product designer" width="270px" height="260px">
+            <h3 class="slots__container__item__title">John Doe</h3>
+            <p class="slots__container__item__description">UI Designer</p>
+              <div class="slots__container__item__socials">
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-instagram-21"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-twitter-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-facebook-1"> 
+                </svg>
+              </div>
+              <div class="slots__container__item__socials__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons-svg/icons.svg#icon-linkedin-11"> 
+                </svg>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="section__our-customer">
+        <h2>Nasi klienci</h2>
+        <div class="container container__logos">
+          <div class="container__logos__item">
+            <svg class="container__logos__item__icon" width="106px" height="60.041px">
+              <use href="./images/icons-svg/icons.svg#icon-group9"></use>
+            </svg>
+          </div>
+          <div class="container__logos__item">
+            <svg class="container__logos__item__icon" width="106px" height="60.041px">
+              <use href="./images/icons-svg/icons.svg#icon-group10"></use>
+            </svg>
+          </div>
+          <div class="container__logos__item">
+            <svg class="container__logos__item__icon" width="106px" height="60.041px">
+              <use href="./images/icons-svg/icons.svg#icon-group11"></use>
+            </svg>
+          </div>
+          <div class="container__logos__item">
+            <svg class="container__logos__item__icon" width="106px" height="60.041px">
+              <use href="./images/icons-svg/icons.svg#icon-group8"></use>
+            </svg>
+          </div>
+          <div class="container__logos__item">
+            <svg class="container__logos__item__icon" width="106px" height="60.041px">
+              <use href="./images/icons-svg/icons.svg#icon-group6"></use>
+            </svg>
+          </div>
+          <div class="container__logos__item">
+            <svg class="container__logos__item__icon" width="106px" height="60.041px">
+              <use href="./images/icons-svg/icons.svg#icon-group7"></use>
+            </svg>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="address_box">
+          <div class="logo">
+            <span class="logo__item--blue">Web</span>
+            <span class="logo__item">studio</span>
+          </div>
+          <ul class="address_box__container">
+            <li class="address_box__item">
+              <a class="address_box__item__link--main" href="https://goo.gl/maps/MzL4v1XyEeLL9hYP8">m. Warszawa, Aleje Jerozolimskie 21</a>
+            </li>
+            <li class="address_box__item">
+              <a class="address_box__item__link" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="address_box__item">
+              <a class="address_box__item__link" href="tel:+48 111 111 111">+48 111 111 111</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="join_us__container">
+          <h3 class="join_us__container__title">Dołącz do nas</h3>
+          <ul class="container__icons">
+            <li class="container__icons__item">
+              <svg class="container__icons__item__icon" width="44px" height="44px">
+                <use href="./images/icons-svg/icons.svg#icon-Ellipse1"> 
+              </svg>
+            </li>
+            <li class="container__icons__item">
+              <svg class="container__icons__item__icon" width="44px" height="44px">
+                <use href="./images/icons-svg/icons.svg#icon-Ellipse2"> 
+              </svg>
+            </li>
+            <li class="container__icons__item">
+              <svg class="container__icons__item__icon" width="44px" height="44px">
+                <use href="./images/icons-svg/icons.svg#icon-Ellipse3"></use> 
+              </svg>
+            </li>
+            <li class="container__icons__item">
+              <svg class="container__icons__item__icon" width="44px" height="44px">
+                <use href="./images/icons-svg/icons.svg#icon-Ellipse"></use> 
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <form class="newsletter__container">
+          <label class="newsletter__container__title" for="e-mail_newsletter">Zapisz się do newslettera</label>
+          <input class="newsletter__container__input" type="email" name="email" placeholder="email" id="e-mail_newsletter">
+          <button class="newsletter__container__button" type="submit">
+            <span class="newsletter__container__button__text">Zapisz się</span>
+            <svg class="newsletter__container__button__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="icon send" d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+      <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+

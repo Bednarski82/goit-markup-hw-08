@@ -1,0 +1,87 @@
+@use '../utils/vars' as *;
+@use './mixins' as *;
+
+
+.menu__container {
+    display: none;
+}
+
+.menu__container.is-open {
+    position: fixed;
+    @include setFlex(row, center, top);
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    background-color: $white;
+
+    
+}
+
+.menu__container {
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    &__content {
+        position: absolute;
+        top: 48px;
+        left: 40px;
+        width: auto;
+        height: auto;
+
+        &__item {
+            margin-bottom: 36px;
+
+            &__link {
+                font-size: 40px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.8px;
+            }
+
+            &__link.is_active {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.info__container {
+    position: absolute;
+    top: 562px;
+    left: 40px;
+    @include setFlex();
+    flex-wrap: wrap;
+
+    &__phone {
+        width: 100%;
+        color: #2196F3;
+        font-size: 34px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.68px;
+    }
+
+    &__email {
+        margin-top: 20px;
+        width: 100%;
+        color: #757575;
+        font-size: 24px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+    }
+}

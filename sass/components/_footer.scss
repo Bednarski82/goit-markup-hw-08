@@ -1,0 +1,221 @@
+@use '../utils/vars' as *;
+@use './mixins' as *;
+@use './buttons' as *;
+
+
+.footer {
+    background-color: #2F303A;
+    
+    @include setFlex();
+    height: 603px;
+
+    .footer__container {
+        @include setFlex(column, space-around, center);
+        flex-wrap: wrap;
+        height: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media screen and (min-width: 721px) and (max-width: 1200px) {
+           @include setFlex(row, space-around, center);
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include setFlex(row, flex-start, center);
+            padding-top: 60px;
+            padding-bottom: 60px;
+            height: 100%;
+        }
+    }
+
+
+    & .address_box {
+        @include setFlex();
+        flex-wrap: wrap;
+        width: 100%;
+
+        @media screen and (min-width: 721px) and (max-width: 1200px) {
+           width: 50%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            @include setFlex(row, flex-start, center);
+            width: 246px;
+            margin-right: 70px;
+        }
+        
+
+        &__item {
+            list-style: none;
+
+            &__link {
+                color: $grey;
+                font-size: 14px;
+                font-family: $font_roboto;
+                line-height: 24px;
+                letter-spacing: 0.42px;
+                text-decoration: none;
+            }
+
+            &__link--main {
+                color: $white;
+                font-size: 14px;
+                font-family: $font_roboto;
+                line-height: 24px;
+                letter-spacing: 0.42px;
+            }
+        }
+
+        &__item:hover {
+            cursor: pointer;
+        }
+
+        &__item:hover svg{
+            fill: white;
+        } 
+    }
+
+    .address_box__container {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+
+        @media screen and (min-width: 721px) and (max-width: 1200px) {
+           width: 50%;
+        }
+
+        @media screen and (min-width: 1200px) {
+            text-align: left;
+        }
+    }
+
+    & .join_us__container {
+            @include setFlex();
+            @media screen and (min-width: 1200px) {
+                @include setFlex(row, flex-start, center);
+            }
+            @include setFlex(row, flex-start, center);
+            flex-wrap: wrap;
+            height: 80px;
+            width: 206px;
+
+        &__title {
+            width: 100%;
+            text-align: center;
+
+            @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+            color: $white;
+            font-size: 14px;
+            font-family: $font_roboto;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        & .container__icons {
+            @include setFlex(row, space-between, center);
+            width: 100%;
+
+            &__item {
+                opacity: .9;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            &__item:hover {
+                background-color: $blue;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            &__item:hover svg{
+                fill: blue;
+            }
+        }
+    }
+
+    & .newsletter__container {
+        width: 100%;
+        @include setFlex();
+
+        @media screen and (min-width: 721px) and (max-width: 1200px) {
+           width: 768px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 570px;
+            height: 86px;
+            @include setFlex(row, space-between, center);
+            margin-left: 78px;
+        }
+        
+        flex-wrap:wrap;
+
+        &__title {
+            width: 100%;
+            text-align: center;
+            @media screen and (min-width: 1200px) {
+                text-align: left;
+            }
+            color: $white;
+            font-size: 14px;
+            font-family: $font_roboto;
+            font-weight: 700;
+            letter-spacing: 0.42px;
+            text-transform: uppercase;
+        }
+
+        &__input {
+            width: 100%;
+            text-align: center;
+            margin-left: 12px;
+            margin-right: 12px;
+            @media screen and (min-width: 1200px) {
+                width: 358px;
+                text-align: left;
+                margin-left: 0px;
+            }
+            height: 50px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.30);
+            background: $dark;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            margin-top: 20px;
+            padding: 15px 16px;
+            color: $white;
+        }
+
+        &__input::placeholder {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 16px;
+            font-family: $font_roboto;
+            line-height: 20px;
+            letter-spacing: 0.48px;
+        }
+
+        &__button {
+            @extend %btn;
+
+            @include setFlex();
+            margin-top: 20px;
+
+            &__text {
+                color: $white;
+                text-align: center;
+                font-size: 16px;
+                font-family: $font_roboto;
+                font-weight: 700;
+                line-height: 30px;
+                letter-spacing: 0.96px;
+                margin-right: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@mixin setFlex($flex-direction:row, $justify-content:center, $align-items:center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin setCenter($top:50%, $left:50%) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+@mixin marginAuto() {
+    margin-left: auto;
+    margin-right: auto;
+}
